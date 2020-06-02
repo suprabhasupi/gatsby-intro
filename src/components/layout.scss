@@ -17,7 +17,7 @@ html,body {
 }
 
 // remove margin for the main div that gatsby mounts into
-> div {
+* > div {
     margin-top: 0;
 }
 

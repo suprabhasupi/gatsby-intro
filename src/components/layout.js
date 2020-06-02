@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from './header/header'
 import './layout.scss'
 
 const Layout = ({children}) => (
     <>
-    {/* <header></header> */}
+    <Header />
     <main className='main-wrapper'>{children}</main>
     </>
 )
