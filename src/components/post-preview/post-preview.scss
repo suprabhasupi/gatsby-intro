@@ -1,8 +1,16 @@
 article {
     border-bottom: 1px solid #ddd;
-    margin-top: 0.75rem;
+    // margin-top: 0.75rem;
+    display: flex;
     padding-bottom: 1rem;
     :first-of-type {
         margin-top: 1rem;
+    }
+    .image-link {
+        margin: 1rem 1rem 0 0;
+        width: 100%;
+    }
+    .post-image {
+        // width: 100%;
     }
 }
