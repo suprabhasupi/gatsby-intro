@@ -22,7 +22,7 @@ const PostTemplate = ({data: {mdx: post }}) => (
         <h1>{post.frontmatter.title}</h1>
         <p className='author'>Posted by {post.frontmatter.author}</p>
         <MDXRenderer>{post.body}</MDXRenderer>
-        {/* <pre>{JSON.stringify(pageContext, null, 2)}</pre> */}
+        {/* <pre>{JSON.stringify(post, null, 10)}</pre> */}
         <Link to="/">&larr; back to all posts</Link>
     </Layout>
 )

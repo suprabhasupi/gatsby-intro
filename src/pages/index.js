@@ -1,16 +1,17 @@
 import React from 'react';
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
+import Hero from '../components/hero/hero'
+
 import usePosts from '../hooks/use-posts'
 import PostPreview from '../components/post-preview/post-preview'
 
 export default () => {
     const posts = usePosts()
     return (
+        <>
+        <Hero />
         <Layout>  
-            <div>Homepage</div>
-            <Link to='/about'>About Us &rarr;</Link>  
-
             <h2>Read My Blogs:</h2>
             {posts.map(post => {
             //    return <pre>{JSON.stringify(post, null, 2)}</pre>
@@ -19,5 +20,6 @@ export default () => {
             )
             })}
         </Layout>
+        </>
     )
 }

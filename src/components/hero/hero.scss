@@ -1,0 +1,32 @@
+.hero-bg {
+    background-image: url('../../../static/images/banner.jpg');
+    height: 50vh;
+    background-position: top 40% center;
+    background-size: cover;
+    // whatever the next element is apply the css
+    + * {
+        margin-top: 0;
+    }
+    .text-box {
+        background-image: linear-gradient(to top, #636363dd 2rem, #ddbbdd00);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        padding: 0 calc((100vw - 500px)/2) 2rem;
+        width: 100%;
+        h1 {
+            text-shadow: 1px 1px 3px #eeddff66;
+            font-size: 2.5rem;
+            color: white;
+        }
+        p,a {
+            color: #222;
+            margin-top: 0;
+            color: white;
+        }
+        a {
+            margin-top: 0.5rem;
+        }
+    }
+}
