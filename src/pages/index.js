@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
 import Hero from '../components/hero/hero'
+import Instagram from '../components/instagram/instagram'
 
 import usePosts from '../hooks/use-posts'
 import PostPreview from '../components/post-preview/post-preview'
@@ -19,6 +20,7 @@ export default () => {
                 <PostPreview key={post.slug} post={post}/>
             )
             })}
+            <Instagram />
         </Layout>
         </>
     )
