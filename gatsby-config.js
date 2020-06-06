@@ -8,6 +8,12 @@ module.exports = {
             'gatsby-transformer-sharp',
             'gatsby-plugin-sharp',
             {
+                resolve: 'gatsby-source-instagram',
+                options: {
+                    username: 'karanisverma'
+                }
+            },
+            {
                 resolve: 'gatsby-plugin-mdx',
                 options: {
                     defaultLayouts: {
@@ -32,9 +38,12 @@ module.exports = {
                 }
             },
             {
-                resolve: 'gatsby-source-instagram',
+                resolve: 'gatsby-plugin-webpack-bundle-analyzer',
                 options: {
-                    username: 'karanisverma'
+                    production: true,
+                    disable: !process.env.ANALYZE_BUNDLE_SIZE,
+                    generateStatsFile: true,
+                    analyzerMode: 'static',
                 }
             }
             ]
