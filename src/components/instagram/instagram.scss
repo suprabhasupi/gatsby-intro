@@ -1,0 +1,24 @@
+.insta-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem -0.5rem;
+    .instagram_pic {
+        box-shadow: 0;;
+        margin: 0.5rem;
+        max-width: calc(33% - 1rem);
+        display: block;
+        width: 120px;
+        transition: 200ms box-shadow linear;
+        :focus, :hover {
+            box-shadow: 0 2px 14px #22222244;
+            z-index: 10;
+        }
+        .instag-img {
+            width: 100%;
+            * {
+                margin-top: 0;
+            }
+        }
+    }
+}
